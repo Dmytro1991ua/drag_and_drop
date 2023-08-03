@@ -1,0 +1,138 @@
+:root {
+  --color-dark-blue: #090c1b;
+  --color-mantis: #7ac142;
+  --color-mantis-darker: #5a803d;
+  --color-lighter-blue: #153c6b;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+  padding: 1.6rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 0.619rem + 1.9048vw, 3rem);
+  margin-bottom: 5rem;
+}
+
+.draggable-area {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (width >= 48rem) {
+    flex-direction: row;
+  }
+}
+
+.draggable-area__left,
+.draggable-area__right {
+  min-width: 25rem;
+  min-height: 28rem;
+  padding: 2rem;
+  background-color: var(--color-lighter-blue);
+  border: 4px dashed var(--color-mantis-darker);
+  border-radius: 1rem;
+
+  @media (width >= 48rem) {
+    min-width: 30rem;
+    min-height: 35rem;
+  }
+
+  @media (width >= 62rem) {
+    min-width: 40rem;
+    min-height: 45rem;
+  }
+}
+
+.draggable-area__item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  border-radius: 1.2rem;
+  background-color: var(--color-mantis);
+  padding: 1rem 0.8rem;
+  cursor: grab;
+  border: 2px solid var(--color-white);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.draggable-area__item:hover {
+  background-color: var(--color-mantis-darker);
+}
+
+img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+h3 {
+  color: var(--color-black);
+}

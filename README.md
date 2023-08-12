@@ -9,6 +9,11 @@ This is a simple web application that demonstrates native HTML5 drag-and-drop fu
 - Basic JavaScript event handling for drag-and-drop events.
 - CSS styling to enhance the user interface.
 
+## Screenshots
+![screencapture-dmytro1991ua-github-io-drag-and-drop-2023-08-12-12_56_46](https://github.com/Dmytro1991ua/drag_and_drop/assets/61331410/56e16798-a05e-4039-8184-573d5502e4cc)
+
+![screencapture-dmytro1991ua-github-io-drag-and-drop-2023-08-12-12_58_50](https://github.com/Dmytro1991ua/drag_and_drop/assets/61331410/8668ff5b-a56c-4db6-b477-5ba513f60b61)
+
 ## Getting Started
 
 1. Clone this repository to your local machine using:
